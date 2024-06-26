@@ -3,9 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:sys="clr-namespace:System;assembly=mscorlib" 
         Title="Recipe Book" Height="600" Width="900">
+    <!-- Define resources used in the window -->
     <Window.Resources>
+        <!-- Define a calorie threshold for highlighting recipes -->
         <sys:Int32 x:Key="CalorieThreshold">300</sys:Int32>
     </Window.Resources>
+
+    <!-- Main Grid Layout with 3 rows -->
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -13,6 +17,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
+        <!-- Filter Section at the top -->
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
             <TextBlock Text="Ingredient:" Margin="5" VerticalAlignment="Center"/>
             <TextBox x:Name="txtIngredientFilter" Width="120" Margin="5"/>
@@ -30,12 +35,14 @@
             <Button x:Name="btnApplyFilter" Content="Apply Filter" Margin="5" Click="btnApplyFilter_Click"/>
         </StackPanel>
 
+        <!-- ListView to display recipes in the middle section -->
         <ListView x:Name="lstRecipes" Grid.Row="1" Margin="5" 
                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                   MouseDoubleClick="lstRecipes_MouseDoubleClick">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Style.Triggers>
+                        <!-- Change text color to red if TotalCalories exceeds CalorieThreshold -->
                         <DataTrigger Binding="{Binding TotalCalories}" Value="{StaticResource CalorieThreshold}">
                             <Setter Property="Foreground" Value="Red"/>
                         </DataTrigger>
@@ -52,6 +59,7 @@
             </ListView.View>
         </ListView>
 
+        <!-- Buttons for Add, View, and Update Recipe at the bottom -->
         <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="5" HorizontalAlignment="Center">
             <Button x:Name="btnAddRecipe" Content="Add Recipe" Margin="5" Click="btnAddRecipe_Click" Width="100"/>
             <Button x:Name="btnViewRecipe" Content="View Recipe" Margin="5" Click="btnViewRecipe_Click" Width="100"/>
@@ -59,3 +67,4 @@
         </StackPanel>
     </Grid>
 </Window>
+<!-- End of window -->
