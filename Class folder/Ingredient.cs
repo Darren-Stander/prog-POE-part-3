@@ -21,5 +21,5 @@ namespace RecipeApp
             Calories = calories;  // Setting the calorie count
             FoodGroup = foodGroup;  // Setting the food group
         }
-
-
+    }
+}       // end of file
