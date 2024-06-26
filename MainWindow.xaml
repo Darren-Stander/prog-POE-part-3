@@ -19,7 +19,7 @@
 
         <!-- Filter Section at the top -->
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
-            <TextBlock Text="Ingredient:" Margin="5" VerticalAlignment="Center"/>
+            <TextBlock Text="Recipe:" Margin="5" VerticalAlignment="Center"/>
             <TextBox x:Name="txtIngredientFilter" Width="120" Margin="5"/>
             <TextBlock Text="Food Group:" Margin="5" VerticalAlignment="Center"/>
             <ComboBox x:Name="cmbFoodGroupFilter" Width="100" Margin="5">
