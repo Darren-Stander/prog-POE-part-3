@@ -61,4 +61,4 @@ namespace RecipeApp
             get { return Ingredients.Sum(i => i.Calories); }  // Summing up the calories of all ingredients
         }
     }
-}
+}               // end of file
