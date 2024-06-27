@@ -2,6 +2,10 @@
 
 # https://github.com/Darren-Stander/prog-POE-part-3
 
+# commits for Part 3
+
+![Screenshot 2024-06-27 112038](https://github.com/Darren-Stander/prog-POE-part-3/assets/163761702/e7c321ab-f926-44ce-ab5b-2290d1326e60)
+
 # Recipe WPF Application
 
 # This is a WPF (Windows Presentation Foundation) application designed to manage recipes. You can create, view, reset, and delete recipes using this app.
@@ -134,3 +138,11 @@ Project Dependencies: If the project fails to build, ensure all NuGet packages a
 Code Issues: If there are errors in the code, review the error messages in the "Error List" window in Visual Studio for guidance on how to resolve them.
 
 By following these steps, you should be able to successfully run the Recipe Manager WPF Application on your machine.
+
+# Changes I have made to the code since part 2 and the changes I have made based on the lectures feedback
+
+I significantly upgraded the Recipe Manager WPF Application to improve both its functionality and code organisation in response to the lecturer's recommendations. Reorganising the codebase was one of the main modifications. I separated the programme into discrete components, each of which handled particular capabilities like ingredient management, recipe phases, and user interface controls, by taking a more modular approach. This made the code easier to read and maintain, made debugging and future improvements easier, and enhanced overall.
+
+I also added a function that lets users choose which food group each item belongs to. This update responds to user input by giving the programme more precise nutritional data and classification. It is now possible for users to group ingredients into categories like proteins, carbs, fats, and others, which facilitates recipe management and analysis. To implement this functionality, a dropdown menu was added to the ingredient entry form so that users may choose the proper food group for each item.
+
+The application's fundamental functions don't alter in spite of these enhancements. It is still simple for users to create, view, reset, and remove recipes. The application integrates the additional organising and classification functions without sacrificing its strong performance or user-friendliness, making for a smooth user experience.
