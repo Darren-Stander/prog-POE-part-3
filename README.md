@@ -34,88 +34,102 @@ Install Microsoft Visual Studio:
 ## Steps to Run
 Download the Zip File:
 
-# Download the zip file containing the source code and extract it to your desired location.
+## Download the zip file containing the source code and extract it to your desired location.
 Navigate to the Project Directory:
 
-# Open a terminal or command prompt and navigate to the directory where you extracted the zip file.
+## Open a terminal or command prompt and navigate to the directory where you extracted the zip file.
 Compile and Run the App:
 
 Run the following commands to compile and execute the application:
 
-# On Windows:
+## On Windows:
 Locate the Zip File:
 
-# Navigate to the folder where the zip file is located.
+## Navigate to the folder where the zip file is located.
 
-# Extract the Zip File:
+## Extract the Zip File:
 
-# Right-click on the zip file.
+## Right-click on the zip file.
 Select "Extract All..." from the context menu.
 Choose a destination folder to extract the contents.
 Click "Extract".
 
-# On macOS:
+## On macOS:
 Locate the Zip File:
 Navigate to the folder where the zip file is located.
 Extract the Zip File:
 Double-click on the zip file.
 The contents will be automatically extracted to a folder with the same name as the zip file.
 
-# Install Microsoft Visual Studio
+## Install Microsoft Visual Studio
 
-# On Windows:
+## On Windows:
 Download Visual Studio Installer:
 Visit the Visual Studio Downloads page.
 Click on the "Download Visual Studio" button to download the installer.
 Run the Installer:
 
-# Locate the downloaded installer (usually in the Downloads folder).
+## Locate the downloaded installer (usually in the Downloads folder).
 Double-click on the installer to run it.
 Select Workloads:
 
-# In the installer, you can select the workloads you want to install (e.g., .NET desktop development, ASP.NET development).
+## In the installer, you can select the workloads you want to install (e.g., .NET desktop development, ASP.NET development).
 Choose the workloads that fit your needs and click "Install".
 Follow the Installation Wizard:
 
-# Follow the on-screen instructions to complete the installation.
+## Follow the on-screen instructions to complete the installation.
 Visual Studio will be installed with the selected workloads.
 
-# Detailed Steps to Run
-# 1. Download the Source Code
+## Detailed Steps to Run
+
+## Download the Source Code
 Visit the GitHub repository.
 
 Click on the green "Code" button and select "Download ZIP".
 
 Save the ZIP file to your computer.
 
-# 3. Open Visual Studio
+## Open Visual Studio
 Open Visual Studio from your Start menu or desktop shortcut.
 
-# 4. Open the Project in Visual Studio
+## Open the Project in Visual Studio
 In Visual Studio, select "Open a project or solution".
 
 Navigate to the extracted folder from step 2.
 
 Open the .sln file within the extracted folder. This is the solution file for the project.
 
-# 5. Prepare the Project
+## Prepare the Project
 If Visual Studio prompts you to install missing components, click "Yes" or "OK" to install them.
 
 Wait for Visual Studio to restore any necessary NuGet packages and dependencies.
 
-# 6. Build the Solution
+## Build the Solution
 Go to the "Build" menu at the top of Visual Studio.
 
 Select "Build Solution" or press Ctrl+Shift+B.
 
 Visual Studio will compile the project, ensuring that all dependencies are correctly resolved and that the code is ready to run.
 
-# 7. Run the Application
+## Run the Code:
+
+Now that we've built the code, it's time to see it in action!
+
 Go to the "Debug" menu at the top of Visual Studio.
 
-Select "Start Debugging" or press F5.
+Choose "Start Debugging." You might also see a green arrow icon that does the same thing - you can click on that too.
 
-The WPF application will start, and you will see the GUI for managing recipes.
+Visual Studio will now run the code, and you should see the results on your screen.
+
+## Explore and Learn:
+
+You did it! You've compiled and run a project from GitHub in Visual Studio.
+
+Take some time to explore the code. Try changing things and see what happens. This is how we learn and get better at coding!
+
+If you run into any problems, don't worry. It's all part of the learning process. Just keep experimenting and asking questions, and you'll get there.
+
+
 
 # Using the Application
 Enter Ingredients: Use the provided interface to enter the ingredients for your recipe.
@@ -146,3 +160,12 @@ I significantly upgraded the Recipe Manager WPF Application to improve both its 
 I also added a function that lets users choose which food group each item belongs to. This update responds to user input by giving the programme more precise nutritional data and classification. It is now possible for users to group ingredients into categories like proteins, carbs, fats, and others, which facilitates recipe management and analysis. To implement this functionality, a dropdown menu was added to the ingredient entry form so that users may choose the proper food group for each item.
 
 The application's fundamental functions don't alter in spite of these enhancements. It is still simple for users to create, view, reset, and remove recipes. The application integrates the additional organising and classification functions without sacrificing its strong performance or user-friendliness, making for a smooth user experience.
+
+# References
+F. (2024, March 4). Learn C# Programming – Full Course with Mini-Projects. YouTube. https://www.youtube.com/watch?v=YrtFtdTTfv0
+
+Ilford Grammar School. (2015, November 11). C# WPF and GUI - Pages and Navigation [Video]. YouTube. https://www.youtube.com/watch?v=aBh0weP1bmo
+
+C# Design Pro. (2020, March 10). WPF - Navigation Drawer / Sidebar Menu | UI Design | XAML | C# | Project | Tutorial [Video]. YouTube. https://www.youtube.com/watch?v=fzBcXicj2G8
+
+Tactic Devs. (2023, April 7). The Basics of Data Binding in WPF [Video]. YouTube. https://www.youtube.com/watch?v=hZmpa53b5R8
